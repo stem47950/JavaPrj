@@ -1,0 +1,9 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\hbahk\\tools\\java-se-8u41-ri\\lib\\dt.jar",
+        "c:\\Users\\hbahk\\tools\\java-se-8u41-ri\\lib\\jconsole.jar",
+        "c:\\Users\\hbahk\\tools\\java-se-8u41-ri\\lib\\sa-jdi.jar",
+        "c:\\Users\\hbahk\\tools\\java-se-8u41-ri\\lib\\tools.jar"
+    ]
+}
