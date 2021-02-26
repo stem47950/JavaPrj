@@ -2,24 +2,26 @@ public class Hello{
     public static void main(String[] args){
         int kor, eng, math;
         int total;
-        double avg;
+        float avg;
 
         kor = 60;
         eng = 70;
         math = 80;
 
         total = kor + eng + math;
-        avg = total / 3;
+        avg = (float)total / 3;
 
         //System.out.printf("total is %d\n", total);
 
-        System.out.print("┌───────────────────────┐\n");
-        System.out.print("│       성적 출력       │\n");
-        System.out.print("└───────────────────────┘\n");
-        System.out.print("국어: 0\n");
-        System.out.print("영어: 0\n");
-        System.out.print("수학: 0\n");
-        System.out.print("총점: 0\n");
-        System.out.print("평균: 0.00\n");
+        System.out.println("┌───────────────────────┐");
+        System.out.println("│       성적 출력       │");
+        System.out.println("└───────────────────────┘");
+
+        System.out.printf("국어: %d\n", kor);
+        System.out.printf("영어: %d\n", eng);
+        System.out.printf("수학: %d\n", math);
+        
+        System.out.printf("총점: %d\n", total);
+        System.out.printf("평균: %5.2f\n", avg);
     }
 }
