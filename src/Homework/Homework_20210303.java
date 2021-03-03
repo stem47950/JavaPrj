@@ -24,15 +24,16 @@ public class Homework_20210303 {
         fis.close();
 
         x = a | b;
-        y = c ^ d;
-        z = x + y;
+        y = c & d;
+        z = x ^ y;
 
         FileOutputStream fos = new FileOutputStream("score.txt");
         PrintStream fileout = new PrintStream(fos);
 
         fileout.print(z);
-        
+
         fileout.close();
         fos.close();
     }
 }
+                                           
