@@ -8,29 +8,34 @@ import java.util.Scanner;
 
 public class Homework_20210303 {
     public static void main(String[] args) throws IOException {
-        int a, b, c, d, e;
-        int x, y, z;
+        FileOutputStream fos = new FileOutputStream("res/score.txt");
+        PrintStream fileout = new PrintStream(fos);
 
-        FileInputStream fis = new FileInputStream("score.txt");
+        fileout.printf("%d %d %d %d", 81, 63, 92, 76);
+
+        fileout.close();
+        fos.close();
+
+        FileInputStream fis = new FileInputStream("res/score.txt");
         Scanner filein = new Scanner(fis);
 
-        a = filein.nextInt();
-        b = filein.nextInt();
-        c = filein.nextInt();
-        d = filein.nextInt();
-        e = filein.nextInt();
+        int a = filein.nextInt();
+        int b = filein.nextInt();
+        int c = filein.nextInt();
+        int d = filein.nextInt();
 
         filein.close();
         fis.close();
 
-        x = a | b;
-        y = c & d;
-        z = x ^ y;
+        int x = a | b;
+        int y = x & c;
+        int z = y ^ d;
+        int m = ~z;
 
-        FileOutputStream fos = new FileOutputStream("res/score.txt");
-        PrintStream fileout = new PrintStream(fos);
-
-        fileout.print(z);
+        fos = new FileOutputStream("res/score.txt");
+        fileout = new PrintStream(fos);
+        
+        fileout.printf("%d %d %d %d", x, y, z, m);
 
         fileout.close();
         fos.close();
