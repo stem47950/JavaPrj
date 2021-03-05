@@ -40,6 +40,8 @@ public class Program {
 
             System.out.println("입력을 계속하겠습니까? [true/false]");
             more = scan.nextBoolean();
+
+            scan.close();
         }
     }
 }
