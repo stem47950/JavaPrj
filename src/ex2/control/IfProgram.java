@@ -6,6 +6,8 @@ public class IfProgram {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int x = input.nextInt();
+        input.close();
+
         if (x % 2 == 0)
             System.out.println("짝수 값");
         else
