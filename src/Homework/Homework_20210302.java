@@ -16,6 +16,7 @@ public class Homework_20210302 {
         System.out.print("지역: "); city = scan.nextLine();
         System.out.print("취미: "); interest = scan.nextLine();
         System.out.println();
+        scan.close();
  
         System.out.println("                [나의 정보]");
         System.out.printf("이름: %s\n", name);
