@@ -37,6 +37,7 @@ public class Homework_20210305 {
 
         // 입력값을 사용해서 소수 탐색에 필요한 크기의 배열 생성
         int[] arr = new int[max + 1];
+
         // 배열을 양의 정수로 채움
         i = 0;
         while (i < arr.length)
@@ -45,7 +46,6 @@ public class Homework_20210305 {
         System.out.println("소수 탐색을 시작합니다. 소수가 발견되면 화면에 출력됩니다.");
         j = 2;
         while (j <= max) {
-
             if (!(arr[j - 1] == 0)) {
                 System.out.printf("%d ", j);
                 i = 1;
