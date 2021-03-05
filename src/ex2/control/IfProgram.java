@@ -8,7 +8,7 @@ public class IfProgram {
         int x = input.nextInt();
         if (x % 2 == 0)
             System.out.println("짝수 값");
-        if (x % 2 != 0)
+        else
             System.out.println("홀수 값");
 
         System.out.println("프로그램 끝!");
