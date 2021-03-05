@@ -27,7 +27,7 @@ public class Homework_20210303 {
         y = c & d;
         z = x ^ y;
 
-        FileOutputStream fos = new FileOutputStream("score.txt");
+        FileOutputStream fos = new FileOutputStream("res/score.txt");
         PrintStream fileout = new PrintStream(fos);
 
         fileout.print(z);
