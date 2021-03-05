@@ -28,7 +28,7 @@ public class Hello {
         /*
          * 파일 data.txt에서 국어, 영어, 수학 성적을 입력받으시오.
          */
-        FileInputStream fis = new FileInputStream("data.txt"); // 파일 입력 스트림 객체를 fis라는 이름으로 생성
+        FileInputStream fis = new FileInputStream("res/data.txt"); // 파일 입력 스트림 객체를 fis라는 이름으로 생성
         Scanner fin = new Scanner(fis); // 객체 fis를 입력으로 받는 Scanner 객체 생성
         kor = fin.nextInt();
         eng = fin.nextInt();
@@ -39,7 +39,7 @@ public class Hello {
         /*
          * 국어, 영어, 수학 성적을 파일 data.txt로 받아내시오.
          */
-        FileOutputStream fos = new FileOutputStream("data.txt");
+        FileOutputStream fos = new FileOutputStream("res/data.txt");
         PrintStream fout = new PrintStream(fos);
         kor++; // kor = kor + 1;
         eng++; // eng = eng + 1;
