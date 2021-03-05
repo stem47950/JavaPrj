@@ -35,6 +35,8 @@ public class Homework_20210305 {
                 flag = false;
         }
 
+        scan.close();
+
         // 입력값을 사용해서 소수 탐색에 필요한 크기의 배열 생성
         int[] arr = new int[max + 1];
 
