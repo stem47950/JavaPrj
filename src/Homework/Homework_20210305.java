@@ -51,7 +51,7 @@ public class Homework_20210305 {
             if (!(arr[j - 1] == 0)) {
                 System.out.printf("%d ", j);
                 i = 1;
-                while (j * i < max) {
+                while (j * i <= max) {
                     arr[j * i - 1] = 0;
                     i++;
                 }
