@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Homework_20210308 {
     public static void main(String[] args) {
         Scanner scan;
+        String subject;
         int sub_num;
         String[] sub_name;
         int[] sub_score;
@@ -14,6 +15,7 @@ public class Homework_20210308 {
         int i;
 
         scan = new Scanner(System.in);
+        subject = "";
         sub_num = 3;
         sub_name = new String[3];
         sub_score = new int[sub_num];
@@ -26,17 +28,18 @@ public class Homework_20210308 {
         for (i = 0; i < sub_num; i++) {
             switch (i) {
             case 0:
-                sub_name[i] = "국어";
+                subject = "국어";
                 break;
 
             case 1:
-                sub_name[i] = "영어";
+                subject = "영어";
                 break;
 
             case 2:
-                sub_name[i] = "수학";
+                subject = "수학";
                 break;
             }
+            sub_name[i] = subject;
 
             valid = false;
             while (!valid) {
