@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ProgramWithMenuUsingSwitch2 {
     public static void main(String[] args) {
-        boolean more, valid;
+        boolean more;
         Scanner scan;
         int menu;
         int kor, eng, math, total;
@@ -28,15 +28,12 @@ public class ProgramWithMenuUsingSwitch2 {
             switch (menu) {
             case 1:
                 System.out.println("───────성적입력───────");
-                valid = false;
-                while (!valid) {
+                do {
                     System.out.print("국어> ");
                     kor = Integer.parseInt(scan.nextLine());
                     if (!(kor >= 0 && kor <= 100))
                         System.out.println("입력 범위: 0과 100 사이의 값만 입력할 수 있습니다.");
-                    else
-                        valid = true;
-                }
+                } while (!(kor >= 0 && kor <= 100));
                 System.out.print("영어> ");
                 eng = Integer.parseInt(scan.nextLine());
                 System.out.print("수학> ");
