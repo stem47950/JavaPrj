@@ -56,8 +56,8 @@ public class Homework_20210308 {
 
         System.out.println("───────성적출력───────");
         for (i = 0; i < sub_num; i++)
-            System.out.printf("%s: %6.2f\n", sub_name[i], (float) sub_score[i]);
-        System.out.printf("총합: %6.2f\n", (float) score_total);
-        System.out.printf("합계: %6.2f\n", score_avg);
+            System.out.printf("%s: %d\n", sub_name[i], sub_score[i]);
+        System.out.printf("총합: %d\n", score_total);
+        System.out.printf("평균: %5.2f\n", score_avg);
     }
 }
