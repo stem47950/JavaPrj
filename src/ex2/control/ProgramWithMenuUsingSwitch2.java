@@ -45,11 +45,14 @@ public class ProgramWithMenuUsingSwitch2 {
                 avg = (float) total / 3;
 
                 System.out.println("───────성적출력───────");
-                System.out.printf("국어: %4.0f\n", (float) kor);
-                System.out.printf("영어: %4.0f\n", (float) eng);
-                System.out.printf("수학: %4.0f\n", (float) math);
-                System.out.printf("총합: %4.0f\n", (float) total);
-                System.out.printf("평균: %7.2f\n", avg);
+                for (int i = 0; i < 3; i++) {
+                    System.out.printf("국어: %4.0f\n", (float) kor);
+                    System.out.printf("영어: %4.0f\n", (float) eng);
+                    System.out.printf("수학: %4.0f\n", (float) math);
+                    System.out.printf("총합: %4.0f\n", (float) total);
+                    System.out.printf("평균: %7.2f\n", avg);
+                    System.out.println("- - - - - - - - - - - ");
+                }
                 break;
 
             case 3:
