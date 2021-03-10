@@ -17,7 +17,7 @@ public class CopyProgram {
         buf = new byte[1024];
 
         while ((size = fis.read(buf)) != -1)
-            fos.write(buf);
+            fos.write(buf, 0, size);
 
         fis.close();
         fos.close();
