@@ -36,7 +36,7 @@ public class Homework_20210311 {
         columns = line.split(",");
 
         System.out.println("----제주-현황----");
-        System.out.printf("기준일자: %s\n  확진자: %s\n  사망자: %s\n", columns[0], columns[1], columns[2]);
+        System.out.printf("기준일자: %s\n  확진자: %s명\n  사망자: %s명\n", columns[0], columns[1], columns[2]);
         System.out.println("-----------------");
 
         fscan.close();
