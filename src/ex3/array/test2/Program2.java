@@ -1,17 +1,18 @@
 package ex3.array.test2;
 
-import java.util.Random;
+// import java.util.Random;
 
 public class Program2 {
     public static void main(String[] args) {
         String[] names;
-        Random rand;
+        // Random rand;
         int i, j;
         String temp;
 
         names = new String[] { "강호동", "유재석", "하하", "김지호", "김현준", "김태희", "박민정" };
-        String n = new String("hello");
-        String n1 = "hello";
+        
+        // String n = new String("hello");
+        // String n1 = "hello";
 
         // rand = new Random();
 
@@ -35,7 +36,7 @@ public class Program2 {
             }
         }
 
-        for (i = 0; i < 7; i++) {
+        for (i = 0; i < names.length; i++) {
             if (i != 0)
                 System.out.print(", ");
             System.out.printf("\"%s\"", names[i]);
