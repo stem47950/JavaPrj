@@ -45,6 +45,8 @@ public class ProgramWithMenu {
                 System.out.printf("총합: %7.2\n", (float) total);
                 System.out.printf("평균: %7.2\n", avg);
             }
+
+            scan.close();
         }
     }
 }
